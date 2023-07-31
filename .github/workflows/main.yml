@@ -38,7 +38,7 @@ jobs:
     # 2) Set up the .NET CLI environment for the workflow to use.
     #    The .NET version is specified by the environment variable.
     - name: Setup .NET
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
         dotnet-quality: 'preview'
