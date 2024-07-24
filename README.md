@@ -1,12 +1,22 @@
-# docker-k8s
-1 on 1 with Docker and Kubernetes as a concepts. Examples (on **.NET 8**) of what have been learnd from the article [Containerized Docker Application Lifecycle with Microsoft Platform and Tools](https://learn.microsoft.com/en-us/dotnet/architecture/containerized-lifecycle/) and still going ;/
+# docker-k8s (1 on 1 with Docker and Kubernetes)
 
-Check our [Wiki](https://github.com/BaiGanio/docker-k8s/wiki) for more **in-depth** examples.
+Examples (on **.NET 8**) of what have been learnd from the article [Containerized Docker Application Lifecycle with Microsoft Platform and Tools](https://learn.microsoft.com/en-us/dotnet/architecture/containerized-lifecycle/) and still going **;/**
+
+Check our **[Wiki](https://github.com/BaiGanio/docker-k8s/wiki)** for more **in-depth** examples.
 
 ---
 
 # Getting Started
 
+### Check your MS SQL Server
+- Download latest image
+```
+docker pull mcr.microsoft.com/azure-sql-edge
+```
+- Create  contauner and run the image
+```
+docker run --cap-add SYS_PTRACE -e 'ACCEPT_EULA=1' -e 'MSSQL_SA_PASSWORD=s3cr3tP@$$' -p 1433:1433 --name azuresqledge -d mcr.microsoft.com/azure-sql-edge
+```
 ### Install Azure CLI 
 - macOS: `brew update && brew install azure-cli`
 - `az --version`
