@@ -39,22 +39,7 @@ docker run --cap-add SYS_PTRACE -e 'ACCEPT_EULA=1' -e 'MSSQL_SA_PASSWORD=s3cr3tP
 - `az --version`
 ---
 
-### Hosting over HTTPS
-For Windows using Linux containers execute:
-```
-dotnet dev-certs https -ep %USERPROFILE%\.aspnet\https\<APPNAME_PLACEHOLDER>.pfx -p <CREDENTIAL_PLACEHOLDER>
-```
-For macOS or Linux execute:
-```
-dotnet dev-certs https -ep ${HOME}/.aspnet/https/<APPNAME_PLACEHOLDER>.pfx -p <CREDENTIAL_PLACEHOLDER>
-```
-Finally run `dotnet dev-certs https --trust`
 
-NOTE: In the preceding commands, replace <APPNAME_PLACEHOLDER> with the project name and <CREDENTIAL_PLACEHOLDER> with a password.
-
-EXAMPLE (macOS): `dotnet dev-certs https -ep ${HOME}/.aspnet/https/simple-counter.pfx -p changeIt`
- - TODO: This example is not complete
----
 
 ### Build and Test
 For Windows using Linux containers:
