@@ -2,12 +2,28 @@
 
 Examples on **.NET** of what have been learnd so far and still going **;/**
 
- - Check our **[Wiki](https://github.com/BaiGanio/docker-k8s/wiki)** for more **in-depth** examples.
- - Check the official article [Containerized Docker Application Lifecycle with Microsoft Platform and Tools](https://learn.microsoft.com/en-us/dotnet/architecture/containerized-lifecycle/) for more expirations.
+The main goal is to be shown how quickly to create and **containerize .NET** applications.
+Examples shown are suitable for **rapid** development
+
+ ✔ Check our **[Wiki](https://github.com/BaiGanio/docker-k8s/wiki)** for more **in-depth** examples.
 
 ---
 
-# Getting Started
+ 
+
+
+## Getting Started
+
+### Check The System
+- Run `dotnet --info` command to determine which .NET SDK you're using.
+- Run `docker info` for basic Docker system info
+  - Shows version, storage driver, container count, network config, and more.
+- Run `docker version` for version details
+  - Displays client and server versions, API versions, build details.
+- Run `docker ps` to check if Docker is running
+  - If this errors out, Docker daemon might not be running.
+
+---
 
 ### Check your MS SQL Server
 - Download latest image
@@ -61,3 +77,8 @@ az acr create --name codejams --resource-group free-resource-group --sku basic -
 ```
 
 ---
+
+### Resources
+ - Check the official articles
+   - [Containerized Docker Application Lifecycle with Microsoft Platform and Tools](https://learn.microsoft.com/en-us/dotnet/architecture/containerized-lifecycle/)
+   - [Tutorial: Containerize a .NET app](https://learn.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=windows)
