@@ -1,8 +1,9 @@
 # docker-k8s (1 on 1 with Docker and Kubernetes)
 
-Examples (on **.NET 8**) of what have been learnd from the article [Containerized Docker Application Lifecycle with Microsoft Platform and Tools](https://learn.microsoft.com/en-us/dotnet/architecture/containerized-lifecycle/) and still going **;/**
+Examples on **.NET** of what have been learnd so far and still going **;/**
 
-Check our **[Wiki](https://github.com/BaiGanio/docker-k8s/wiki)** for more **in-depth** examples.
+ - Check our **[Wiki](https://github.com/BaiGanio/docker-k8s/wiki)** for more **in-depth** examples.
+ - Check the official article [Containerized Docker Application Lifecycle with Microsoft Platform and Tools](https://learn.microsoft.com/en-us/dotnet/architecture/containerized-lifecycle/) for more expirations.
 
 ---
 
