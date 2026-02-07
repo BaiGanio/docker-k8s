@@ -1,3 +1,17 @@
+<!-- MAIN TITLE -->
+<h1 align="center">Welcome, Unkindled one!</h1>
+<p align="center">(Dark Souls version)</p>
+<!-- INTRO PARAGRAPH -->
+<h3 align="center">
+***<br>
+Here, among clusters and containers, you shall trace the paths of those who came before You.<br>
+***<br>
+May your containers build, your clusters reconcile, and your YAML remain untainted by traitorous indentation.<br>
+The flame flickers, but it does not fade - not yet!<br>
+***
+</h3>
+
+
 <table align="left">
  <tr><th>
   <h2 align="left">ℜ𝔢𝔩𝔦𝔠𝔰 𝔒𝔣 𝔗𝔥𝔢 𝔄𝔫𝔠𝔦𝔢𝔫𝔱𝔰</h2>
