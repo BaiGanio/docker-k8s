@@ -1,3 +1,36 @@
+<table align="left">
+ <tr><th>
+  <h2 align="left">ℜ𝔢𝔩𝔦𝔠𝔰 𝔒𝔣 𝔗𝔥𝔢 𝔄𝔫𝔠𝔦𝔢𝔫𝔱𝔰</h2>
+ </th></tr>
+ <tr><td>
+  <p align="center">
+  <a href="https://raw.githubusercontent.com/BaiGanio/docker-k8s/refs/heads/master/src/files/geography.sql">𝔤𝔢𝔬𝔤𝔯𝔞𝔭𝔥𝔶.𝔰𝔮𝔩</a>
+  <br>
+  <a href="https://raw.githubusercontent.com/BaiGanio/docker-k8s/refs/heads/master/src/files/geography.sql">𝔠𝔬𝔪𝔭𝔞𝔫𝔶.𝔰𝔮𝔩</a>
+</p>
+ </td></tr>
+</table>
+
+<table align="right">
+ <tr><th>
+  <h2 align="left">ℜ𝔢𝔩𝔦𝔠𝔰 𝔒𝔣 𝔗𝔥𝔢 𝔄𝔫𝔠𝔦𝔢𝔫𝔱𝔰</h2>
+ </th></tr>
+ <tr><td>
+  <p align="center">
+  <a href="https://raw.githubusercontent.com/BaiGanio/docker-k8s/refs/heads/master/src/files/geography.sql">𝔤𝔢𝔬𝔤𝔯𝔞𝔭𝔥𝔶.𝔰𝔮𝔩</a>
+  <br>
+  <a href="https://raw.githubusercontent.com/BaiGanio/docker-k8s/refs/heads/master/src/files/geography.sql">𝔠𝔬𝔪𝔭𝔞𝔫𝔶.𝔰𝔮𝔩</a>
+</p>
+ </td></tr>
+</table>
+<p><p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ 
 # docker-k8s (1 on 1 with Docker and Kubernetes)
 
 Examples on **.NET** of what have been learnd so far and still going **;/**
