@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Mercury",
+    "orderFromSun": 1,
+    "hasRings": false,
+    "mass": 0.055
+  },
+  {
+    "name": "Venus",
+    "orderFromSun": 2,
+    "hasRings": false,
+    "mass": 0.815
+  },
+  {
+    "name": "Earth",
+    "orderFromSun": 3,
+    "hasRings": false,
+    "mass": 1.0
+  },
+  {
+    "name": "Mars",
+    "orderFromSun": 4,
+    "hasRings": false,
+    "mass": 0.107
+  },
+  {
+    "name": "Jupiter",
+    "orderFromSun": 5,
+    "hasRings": true,
+    "mass": 317.8
+  },
+  {
+    "name": "Saturn",
+    "orderFromSun": 6,
+    "hasRings": true,
+    "mass": 95.2
+  },
+  {
+    "name": "Uranus",
+    "orderFromSun": 7,
+    "hasRings": true,
+    "mass": 14.5
+  },
+  {
+    "name": "Neptune",
+    "orderFromSun": 8,
+    "hasRings": true,
+    "mass": 17.1
+  }
+]
