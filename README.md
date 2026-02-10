@@ -1,3 +1,4 @@
+<a id="top"></a>
 <!-- MAIN TITLE -->
 <h1 align="center">Welcome, Unkindled one!</h1>
 <p align="center">(Dark Souls version)</p>
@@ -31,29 +32,34 @@ The flame flickers, but it does not fade - not yet!<br>
 
 ---
 
-## 🏴‍☠️ What Is This?
-### This is a **1‑on‑1 training ground** for mastering:
-
-- **Docker** — the art of binding your .NET creations into immutable vessels  
-- **Kubernetes** — the orchestration of Pods, Deployments, and Services  
-- **.NET** — your trusted weapon, reforged to thrive in containerized realms  
-
-#### Each lesson is crafted as a **challenge**, a trial by fire, designed to strengthen your understanding through practice rather than mere observation.
+<h2 align="center">🏴‍☠️ What Is This?<br>This is a 1‑on‑1 training ground for mastering:</h2>
+<h3 align="center">
+Docker — the art of binding your .NET creations into immutable vessels<br>
+Kubernetes — the orchestration of Pods, Deployments, and Services<br>
+.NET — your trusted weapon, reforged to thrive in containerized realms  
+</h3>
+<p align="center">Each lesson is crafted as a challenge, a trial by fire, designed to strengthen your understanding through practice rather than mere observation.</p>
+<p align="center" style="font-size: 90%; opacity: 0.7;">
+  [<a href="#top">Back to top ↑</a>]
+</p>
 
 ---
 
 <h2 align="center">☠️ The True Trials Await in the Wiki<h2>
 <h3 align="center">Beyond this threshold lies the Wiki, a labyrinth of trials forged in YAML, CLI incantations<br>& the quiet hum of container daemons.</h3>
 
-There, you will:
-
-- Build and tag Docker images  
-- Push and pull from registries  
-- Deploy .NET services into Kubernetes  
-- Face ConfigMaps, Secrets, and Ingresses  
-- Wrestle with scaling, health checks, and rolling updates  
-
-<h4 align="center">The Wiki is your safepoint bonfire!<br>Begin your pilgrimage from there.<br>Return to it whenever the cluster grows dark and inscrutable.</h4>
+<h4 align="center">
+There, you will:<br><br>
+Build and tag Docker images<br>
+Push and pull from registries <br>
+Deploy .NET services into Kubernetes <br>
+Face ConfigMaps, Secrets, and Ingresses <br>
+Wrestle with scaling, health checks, and rolling updates  
+</h4>
+<p align="center">The Wiki is your safepoint bonfire!<br>Begin your pilgrimage from there.<br>Return to it whenever the cluster grows dark and inscrutable.</p>
+<p align="center" style="font-size: 90%; opacity: 0.7;">
+  [<a href="#top">Back to top ↑</a>]
+</p>
 
 ---
 
@@ -61,6 +67,9 @@ There, you will:
 <h3 align="center">Should you wish to add new trials, improve the lore, or expand the Wiki?<br>Your flame is welcome here.<br>
 Open a pull request and let your contribution be judged by the Firekeepers.
 </h3>
+ <p align="center" style="font-size: 90%; opacity: 0.7;">
+  [<a href="#top">Back to top ↑</a>]
+</p>
  
 --- 
 <h2 align="center">⚔️ Final Words, Unkindled Engineer<h2>
@@ -74,5 +83,8 @@ The flame endures.<br>
 So shall you.<br>
 ***
 </h4>
-
+<p align="center" style="font-size: 90%; opacity: 0.7;">
+  [<a href="#top">Back to top ↑</a>]
+</p>
+ 
 ---
