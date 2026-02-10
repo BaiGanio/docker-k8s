@@ -33,11 +33,61 @@ The flame flickers, but it does not fade - not yet!<br>
 ---
 
 <h2 align="center">🏴‍☠️ What Is This?<br>This is a 1‑on‑1 training ground for mastering:</h2>
-<h3 align="center">
-Docker — the art of binding your .NET creations into immutable vessels<br>
-Kubernetes — the orchestration of Pods, Deployments, and Services<br>
-.NET — your trusted weapon, reforged to thrive in containerized realms  
-</h3>
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center;">🌳 Skill Tree of the Unkindled Engineer</th>
+  </tr>
+
+  <!-- Docker -->
+  <tr>
+    <td style="width:120px; text-align:center; font-size:2rem;">
+      🐳
+    </td>
+    <td>
+      <strong>Docker</strong><br>
+      <em>The art of binding your .NET creations into immutable vessels.</em><br>
+      <ul>
+        <li>📦 Image Forging</li>
+        <li>🧱 Multi‑Stage Rituals</li>
+        <li>🚢 Registry Pilgrimage</li>
+      </ul>
+    </td>
+  </tr>
+
+  <!-- Kubernetes -->
+  <tr>
+    <td style="text-align:center; font-size:2rem;">
+      ☸️
+    </td>
+    <td>
+      <strong>Kubernetes</strong><br>
+      <em>The orchestration of Pods, Deployments, and Services.</em><br>
+      <ul>
+        <li>🧩 Pod Summoning</li>
+        <li>🏰 Deployment Command</li>
+        <li>🌐 Ingress Gatekeeping</li>
+      </ul>
+    </td>
+  </tr>
+
+  <!-- .NET -->
+  <tr>
+    <td style="text-align:center; font-size:2rem;">
+      ⚔️
+    </td>
+    <td>
+      <strong>.NET</strong><br>
+      <em>Your trusted weapon, reforged to thrive in containerized realms.</em><br>
+      <ul>
+        <li>🔧 API Forging</li>
+        <li>🔥 Performance Tempering</li>
+        <li>🛡️ Resilience Patterns</li>
+      </ul>
+    </td>
+  </tr>
+
+</table>
+
 <p align="center">Each lesson is crafted as a challenge, a trial by fire, designed to strengthen your understanding through practice rather than mere observation.</p>
 <p align="center" style="font-size: 90%; opacity: 0.7;">
   [<a href="#top">Back to top ↑</a>]
