@@ -22,7 +22,7 @@ The flame flickers, but it does not fade - not yet!<br>
 
 ## 🏗️ Repository Structure
 ```text
-📦 root
+📦 unkindled
  ┣ 📁 src/           # .NET projects used in the challenges
  ┣ 📁 docker/        # Dockerfiles, multi-stage builds, examples
  ┣ 📁 k8s/           # Kubernetes manifests for various trials
