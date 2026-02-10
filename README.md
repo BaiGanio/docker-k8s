@@ -64,9 +64,12 @@ Wrestle with scaling, health checks, and rolling updates
 ---
 
 <h2 align="center">Contributing<h2>
-<h3 align="center">Should you wish to add new trials, improve the lore, or expand the Wiki?<br>Your flame is welcome here.<br>
+<h4 align="center">Should you wish to add new trials, improve the lore, or expand the Wiki?<br>Your flame is welcome here.<br>
 Open a pull request and let your contribution be judged by the Firekeepers.
-</h3>
+</h4>
+ <p align="center">
+  Please read the full guidelines here: 👉 [CONTRIBUTING.md](./CONTRIBUTING.md)
+</p>
  <p align="center" style="font-size: 90%; opacity: 0.7;">
   [<a href="#top">Back to top ↑</a>]
 </p>
