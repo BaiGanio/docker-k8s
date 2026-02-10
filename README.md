@@ -38,7 +38,7 @@ The flame flickers, but it does not fade - not yet!<br>
 - **Kubernetes** — the orchestration of Pods, Deployments, and Services  
 - **.NET** — your trusted weapon, reforged to thrive in containerized realms  
 
-Each lesson is crafted as a **challenge**, a trial by fire, designed to strengthen your understanding through practice rather than mere observation.
+#### Each lesson is crafted as a **challenge**, a trial by fire, designed to strengthen your understanding through practice rather than mere observation.
 
 ---
 
@@ -53,7 +53,7 @@ There, you will:
 - Face ConfigMaps, Secrets, and Ingresses  
 - Wrestle with scaling, health checks, and rolling updates  
 
-### The Wiki is your safepoint bonfire — begin your pilgrimage frtom there & return to it whenever the cluster grows dark and inscrutable.
+<h4 align="center">The Wiki is your safepoint bonfire!<br>Begin your pilgrimage from there.<br>Return to it whenever the cluster grows dark and inscrutable.</h4>
 
 ---
 
