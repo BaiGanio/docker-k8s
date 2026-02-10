@@ -127,7 +127,7 @@ Open a pull request and let your contribution be judged by the Firekeepers.
 --- 
 <h2 align="center">⚔️ Final Words, Unkindled Engineer<h2>
 <h4 align="center">
-Let Mother Faith aknowledge you with great powers as Master of Docker, Commander of Kubernetes & Knight of .NET<br>
+Let Mother Faith aknowledge you with great powers as Master of Docker, Kubernetes Commander & .NET Knight<br>
 ***<br>
 Let your .NET creations rise again, reborn within containers — immutable and unyielding.<br>
 May your pods stay Ready, your nodes stay Healthy, and your deployments roll out without incident.  <br>
