@@ -18,7 +18,7 @@ The flame flickers, but it does not fade - not yet!<br>
 <h2 align="center">***<br>☠️ The True Trials Awaits<br> 
 <a href="https://github.com/BaiGanio/docker-k8s/wiki">[👉 Enter]</a><br>***<br>
 </h2>
-<h2 align="center">🧐 The Unkindled’s Guide to Containers</h3>
+<h2 align="center">🧐 The Unkindled’s Guide</h3>
 
 ## 🏗️ Repository Structure
 ```text
