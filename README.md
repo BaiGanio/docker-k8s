@@ -23,16 +23,16 @@ The flame flickers, but it does not fade - not yet!<br>
 ## 🏗️ Repository Structure
 ```text
 📦 unkindled
- ┣ 📁 src/           # .NET projects used in the challenges
+ ┣ 📁 dotnet/           # .NET projects used in the challenges
     ┣ 📁 warm-up/
     ┣ 📁 easy/
     ┣ 📁 medium/
-    ┣ 📁 gard/ 
- ┣ 📁 docker/        # Dockerfiles, multi-stage builds, examples
+    ┣ 📁 hard/ 
+ ┣ 📁 docker/           # Dockerfiles, multi-stage builds, examples
     ┣ 🐳 Dockerfile
     ┣ 🐳 sql.Docker
- ┣ 📁 k8s/           # Kubernetes manifests for various trials
- ┣ 📁 docs/          # Additional lore, diagrams, and notes
+ ┣ 📁 k8s/              # Kubernetes manifests for various trials
+ ┣ 📁 docs/             # Additional lore, diagrams, and notes
     ┣ 📜 geography.sql
     ┣ 📜 company.sql
     ┣ 📜 planets.sql
