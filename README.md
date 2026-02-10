@@ -13,13 +13,11 @@ The flame flickers, but it does not fade - not yet!<br>
 
 ---
 
-<h3 align="center">🧐 The Unkindled’s Guide to Containers<br>***</h3>
 
-<h3 align="center">☠️ The True Trials Awaits<br> 
-<a href="https://github.com/BaiGanio/docker-k8s/wiki">[👉 Enter]</a>
-</h4>
-
----
+<h2 align="center">***<br>☠️ The True Trials Awaits<br> 
+<a href="https://github.com/BaiGanio/docker-k8s/wiki">[👉 Enter]</a><br>***<br>
+</h2>
+<h2 align="center">🧐 The Unkindled’s Guide to Containers</h3>
 
 ## 🏗️ Repository Structure
 ```text
@@ -44,8 +42,8 @@ Each lesson is crafted as a **challenge**, a trial by fire, designed to strength
 
 ---
 
-## ☠️ The True Trials Await in the Wiki
-### Beyond this threshold lies the **Wiki**, a labyrinth of trials forged in YAML, CLI incantations, and the quiet hum of container daemons.
+<h2 align="center">☠️ The True Trials Await in the Wiki<h2>
+<h3 align="center">Beyond this threshold lies the Wiki, a labyrinth of trials forged in YAML, CLI incantations<br>& the quiet hum of container daemons.</h3>
 
 There, you will:
 
@@ -60,9 +58,10 @@ There, you will:
 ---
 
 <h2 align="center">Contributing<h2>
-Should you wish to add new trials, improve the lore, or expand the Wiki, your flame is welcome here.
+<h3 align="center">Should you wish to add new trials, improve the lore, or expand the Wiki?<br>Your flame is welcome here.<br>
 Open a pull request and let your contribution be judged by the Firekeepers.
-
+</h3>
+ 
 --- 
 <h2 align="center">⚔️ Final Words, Unkindled Engineer<h2>
 <h3 align="center">
