@@ -29,8 +29,8 @@ The flame flickers, but it does not fade - not yet!<br>
     ┣ 📁 medium/
     ┣ 📁 hard/ 
  ┣ 📁 docker/           # Dockerfiles, multi-stage builds, examples
-    ┣ 🐳 Dockerfile
-    ┣ 🐳 sql.Docker
+    ┣ 🐳 Dockerfile     # .NET console app image
+    ┣ 🐳 sql.Docker     # SQL Server image
  ┣ 📁 k8s/              # Kubernetes manifests for various trials
  ┣ 📁 docs/             # Additional lore, diagrams, and notes
     ┣ 📜 geography.sql
