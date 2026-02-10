@@ -45,7 +45,7 @@ Kubernetes — the orchestration of Pods, Deployments, and Services<br>
 
 ---
 
-<h2 align="center">☠️ The True Trials Await in the Wiki<h2>
+<h2 align="center">☠️ The True Trials Await in the Wiki (The Great Library)<h2>
 <h3 align="center">Beyond this threshold lies the Wiki, a labyrinth of trials forged in YAML, CLI incantations<br>& the quiet hum of container daemons.</h3>
 
 <h4 align="center">
