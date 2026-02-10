@@ -68,7 +68,7 @@ Wrestle with scaling, health checks, and rolling updates
 Open a pull request and let your contribution be judged by the Firekeepers.
 </h4>
  <p align="center">
-  Please read the full guidelines here: 👉 [CONTRIBUTING.md](./CONTRIBUTING.md)
+  Please read the full guidelines here: <a href="./CONTRIBUTING.md">[👉 CONTRIBUTING.md]</a>
 </p>
  <p align="center" style="font-size: 90%; opacity: 0.7;">
   [<a href="#top">Back to top ↑</a>]
