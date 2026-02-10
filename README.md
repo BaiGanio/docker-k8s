@@ -135,7 +135,7 @@ Open a pull request and let your contribution be judged by the Firekeepers.
 </p>
  
 --- 
-<h2 align="center">⚔️ Final Words, Unkindled Engineer<h2>
+<h2 align="center">⚔️ Encourege Words, Unkindled Engineer<h2>
 <h4 align="center">
 Let Mother Faith aknowledge you with great powers as Master of Docker, Kubernetes Commander & .NET Knight<br>
 ***<br>
@@ -151,3 +151,5 @@ So shall you.<br>
 </p>
  
 ---
+
+<p align="center"><b>[1]</b></p>
