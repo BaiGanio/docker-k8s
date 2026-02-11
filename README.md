@@ -105,24 +105,6 @@ The flame flickers, but it does not fade - not yet!<br>
 
 ---
 
-<h2 align="center">☠️ The True Trials Await in the Wiki (The Great Library)<h2>
-<h3 align="center">Beyond this threshold lies the Wiki, a labyrinth of trials forged in YAML, CLI incantations<br>& the quiet hum of container daemons.</h3>
-
-<h4 align="center">
-There, you will:<br><br>
-Build and tag Docker images<br>
-Push and pull from registries <br>
-Deploy .NET services into Kubernetes <br>
-Face ConfigMaps, Secrets, and Ingresses <br>
-Wrestle with scaling, health checks, and rolling updates  
-</h4>
-<p align="center">The Wiki is your safepoint bonfire!<br>Begin your pilgrimage from there.<br>Return to it whenever the cluster grows dark and inscrutable.</p>
-<p align="center" style="font-size: 90%; opacity: 0.7;">
-  [<a href="#top">Back to top ↑</a>]
-</p>
-
----
-
 <h2 align="center">Contributing<h2>
 <h4 align="center">Should you wish to add new trials, improve the lore, or expand the Wiki?<br>Your flame is welcome here.<br>
 Open a pull request and let your contribution be judged by the Firekeepers.
