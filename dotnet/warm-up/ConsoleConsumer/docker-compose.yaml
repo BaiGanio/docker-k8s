@@ -1,0 +1,48 @@
+services:
+  mssql-server:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql-server
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=P@ssw0rd
+    ports:
+      - "1433:1433"
+    healthcheck:
+      test: [
+        "CMD",
+        "/opt/mssql-tools/bin/sqlcmd",
+        "-S", "localhost",
+        "-U", "sa",
+        "-P", "P@ssw0rd",
+        "-Q", "SELECT 1"
+      ]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 20s
+
+  db-init:
+    image: mcr.microsoft.com/mssql-tools:latest
+    depends_on:
+      mssql-server:
+        condition: service_healthy
+    volumes:
+      - ./planets.sql:/planets.sql
+    command: >
+      bash -c "
+        /opt/mssql-tools/bin/sqlcmd
+          -S mssql-server
+          -U sa
+          -P 'P@ssw0rd'
+          -i /planets.sql
+      "
+
+  console-app:
+    build: ./
+    depends_on:
+      mssql-server:
+        condition: service_healthy
+      db-init:
+        condition: service_completed_successfully
+    environment:
+      - ConnectionStrings__Default=Server=mssql-server;Database=Planets;User Id=sa;Password=P@ssw0rd;
