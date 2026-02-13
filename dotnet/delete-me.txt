@@ -1,1 +1,16 @@
-delete-me
+warm-up/
+ └── Console/
+      ├── planets.json
+      ├── Console.Docker.csproj
+      ├── Planet.cs
+      └── Program.cs
+
+## In `Console.Docker.csproj` add:
+
+```xml
+<ItemGroup>
+  <None Update="planets.json">
+    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+  </None>
+</ItemGroup>
+```

@@ -1,16 +1,31 @@
-﻿var counter = 0;
-var max = args.Length is not 0 ? Convert.ToInt32(args[0]) : -1;
-while (max is -1 || counter < max)
-{
-    TextColorizer($"Counter: {++counter}");
-    await Task.Delay(TimeSpan.FromMilliseconds(1_000));
-}
+﻿using System.Text.Json;
 
-static void TextColorizer(string text)
+var json = File.ReadAllText("planets.json");
+var planets = JsonSerializer.Deserialize<List<Planet>>(json);
+
+Console.WriteLine("Choose your battle Unkindled:");
+Console.WriteLine("0. Demo");
+Console.WriteLine("1. Total Solar System Diameter");
+Console.WriteLine("2. Total Atmosphere Components");
+Console.WriteLine("3. Average Planet Mass");
+Console.WriteLine("4. Count Ringed Planets");
+
+Console.Write("\nEnter choice: ");
+var choice = Console.ReadLine();
+
+Console.WriteLine();
+
+switch (choice)
 {
-	var colors = Enum.GetValues(typeof(ConsoleColor));
-	var color = (ConsoleColor)colors.GetValue(Random.Shared.Next(colors.Length));	
-	Console.ForegroundColor = color;
-	Console.WriteLine($"{text} -> {color}");
-	Console.ResetColor();
+    case "0":
+        Console.WriteLine("ID   Name       Mass(E)   Distance(AU)");
+        Console.WriteLine("---------------------------------------");
+
+        foreach (var p in planets)
+			Console.WriteLine($"{p.PlanetID}    {p.Name,-10} {p.MassEarths,-8} {p.DistanceAU}");
+        break;
+
+    default:
+        Console.WriteLine("Battle unavailable.");
+        break;
 }
