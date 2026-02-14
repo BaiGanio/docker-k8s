@@ -1,31 +1,36 @@
 ﻿using System.Text.Json;
 
-var json = File.ReadAllText("planets.json");
-var planets = JsonSerializer.Deserialize<List<Planet>>(json);
+string json = File.ReadAllText("planets.json");
+List<Planet>? planets = JsonSerializer.Deserialize<List<Planet>>(json);
 
-Console.WriteLine("Choose your battle Unkindled:");
-Console.WriteLine("0. Demo");
-Console.WriteLine("1. Total Solar System Diameter");
-Console.WriteLine("2. Total Atmosphere Components");
-Console.WriteLine("3. Average Planet Mass");
-Console.WriteLine("4. Count Ringed Planets");
+Entry(planets);
 
-Console.Write("\nEnter choice: ");
-var choice = Console.ReadLine();
+static void Entry(List<Planet>? planets)
+{	
+    Console.WriteLine("Choose your battle Unkindled:");
+    Console.WriteLine("0. Print planets");
 
-Console.WriteLine();
+    Console.Write("\nEnter choice: ");
+    var choice = Console.ReadLine();
 
-switch (choice)
+    Console.WriteLine();
+
+    switch (choice)
+    {
+        case "0":
+            Print(planets); // <= Your fight Unkindled
+            break;
+        default:
+            Console.WriteLine("Battle unavailable.");
+            break;
+    }
+}
+
+static void Print(List<Planet> planets)
 {
-    case "0":
-        Console.WriteLine("ID   Name       Mass(E)   Distance(AU)");
-        Console.WriteLine("---------------------------------------");
+    Console.WriteLine("ID   Name       Mass(E)   Distance(AU)");
+    Console.WriteLine("---------------------------------------");
 
-        foreach (var p in planets)
-			Console.WriteLine($"{p.PlanetID}    {p.Name,-10} {p.MassEarths,-8} {p.DistanceAU}");
-        break;
-
-    default:
-        Console.WriteLine("Battle unavailable.");
-        break;
+    foreach (var p in planets)
+        Console.WriteLine($"{p.PlanetID}    {p.Name,-10} {p.MassEarths,-8} {p.DistanceAU}");
 }

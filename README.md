@@ -24,6 +24,12 @@ The flame flickers, but it does not fade - not yet!<br>
 ```text
 📦 unkindled
  ┣ 📁 dotnet/           # .NET projects used in the challenges
+    ┣ 📁 common/        # Artifacts from the Ancients
+      ┣ 📜 geography.sql
+      ┣ 📜 company.sql
+      ┣    Planet.cs
+      ┣ 📜 planets.sql
+      ┣ 📜 planets.json
     ┣ 📁 warm-up/
     ┣ 📁 easy/
     ┣ 📁 medium/
@@ -32,12 +38,8 @@ The flame flickers, but it does not fade - not yet!<br>
     ┣ 🐳 Dockerfile     # .NET console app image
     ┣ 🐳 sql.Docker     # SQL Server image
  ┣ 📁 k8s/              # Kubernetes manifests for various trials
- ┣ 📁 docs/             # Additional lore, diagrams, and notes
-    ┣ 📜 geography.sql
-    ┣ 📜 company.sql
-    ┣ 📜 planets.sql
-    ┣ 📜 planets.json
- ┗ README.md    <=   # You stand here, Unkindled one
+ ┣ 📁 files/            # Additional lore, diagrams, notes and images
+ ┗ README.md     <=     # You stand here, Unkindled one
 ```
 
 ---
