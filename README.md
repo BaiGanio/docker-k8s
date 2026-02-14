@@ -22,23 +22,20 @@ The flame flickers, but it does not fade - not yet!<br>
 
 ## 🏗️ Repository Structure
 ```text
-📦 unkindled
- ┣ 📁 dotnet/           # .NET projects used in the challenges
-    ┣ 📁 common/        # Artifacts from the Ancients
-      ┣ 📜 geography.sql
-      ┣ 📜 company.sql
-      ┣    Planet.cs
-      ┣ 📜 planets.sql
-      ┣ 📜 planets.json
-    ┣ 📁 warm-up/
-    ┣ 📁 easy/
-    ┣ 📁 medium/
-    ┣ 📁 hard/ 
- ┣ 📁 docker/           # Dockerfiles, multi-stage builds, examples
-    ┣ 🐳 Dockerfile     # .NET console app image
-    ┣ 🐳 sql.Docker     # SQL Server image
- ┣ 📁 k8s/              # Kubernetes manifests for various trials
- ┣ 📁 files/            # Additional lore, diagrams, notes and images
+📦 unkindled         # .NET projects used in the challenges
+ ┣ 📁 artifacts/        # Artifacts from the Ancients
+   ┣ 📁 files/ 
+     ┣ geography.sql
+     ┣ company.sql
+     ┣ docker-compose.yaml
+     ┣ Planet.cs
+     ┣ planets.sql
+     ┣ planets.json
+   ┗ 📁 images/ 
+ ┣ 📁 easy/
+ ┣ 📁 hard/ 
+ ┣ 📁 medium/
+ ┣ 📁 warm-up/
  ┗ README.md     <=     # You stand here, Unkindled one
 ```
 
