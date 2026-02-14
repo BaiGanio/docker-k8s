@@ -1,0 +1,18 @@
+services:
+  mssql-server:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=P@ssw0rd
+    ports:
+      - "1433:1433"
+
+  db-init:
+    image: mcr.microsoft.com/mssql-tools:latest
+    depends_on:
+      - mssql-server
+    volumes:
+      - ./planets.sql:/planets.sql
+    # This command waits 15s for the DB to wake up, then runs the script
+    command: >
+      bash -c "sleep 15s && /opt/mssql-tools/bin/sqlcmd -S mssql-server -U sa -P 'P@ssw0rd' -i /planets.sql -C"
