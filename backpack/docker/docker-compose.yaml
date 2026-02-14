@@ -1,5 +1,5 @@
 services:
-  mssql-server:
+  mighty-mssql-server:
     image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
       - ACCEPT_EULA=Y
@@ -10,15 +10,15 @@ services:
   db-init:
     image: mcr.microsoft.com/mssql-tools:latest
     depends_on:
-      - mssql-server
+      - mighty-mssql-server
     volumes:
-      - .:/sql  # Maps the current folder (containing your .sql files) to /sql
+      - ../sql/:/sql  # Maps the current folder (containing your .sql files) to /sql
     command: >
       bash -c "
         echo 'Waiting for SQL Server to start...' &&
         sleep 15s &&
         for f in /sql/*.sql; do
           echo \"Running $$f\";
-          /opt/mssql-tools/bin/sqlcmd -S mssql-server -U sa -P 'P@ssw0rd' -i \"$$f\" -C;
+          /opt/mssql-tools/bin/sqlcmd -S mighty-mssql-server -U sa -P 'P@ssw0rd' -i \"$$f\" -C;
         done
       "

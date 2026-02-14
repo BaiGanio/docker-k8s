@@ -9,4 +9,5 @@ public class Planet
     public string Atmosphere { get; set; }
     public string? DiscoveredBy { get; set; }
     public int? DiscoveryYear { get; set; }
+    public string? ImgUrl { get; set; }
 }

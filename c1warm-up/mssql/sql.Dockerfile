@@ -1,3 +1,5 @@
+# THIS IS PURE STANDALONE SQL SERVER
+
 # Use official SQL Server image
 FROM mcr.microsoft.com/mssql/server:2022-latest
 
@@ -10,4 +12,3 @@ EXPOSE 1433
 
 # Default command to run SQL Server
 CMD ["/opt/mssql/bin/sqlservr"]
-#

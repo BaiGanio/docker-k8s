@@ -8,7 +8,8 @@
     "HasRings": false,
     "Atmosphere": "Oxygen, Sodium, Hydrogen",
     "DiscoveredBy": null,
-    "DiscoveryYear": null
+    "DiscoveryYear": null,
+    "ImgUrl": "https://solarsystem.nasa.gov/system/feature_items/images/18_mercury_new.png"
   },
   {
     "PlanetID": 2,
@@ -19,7 +20,8 @@
     "HasRings": false,
     "Atmosphere": "CO2, Nitrogen",
     "DiscoveredBy": null,
-    "DiscoveryYear": null
+    "DiscoveryYear": null,
+    "ImgUrl": "https://solarsystem.nasa.gov/system/feature_items/images/27_venus_jg.png"
   },
   {
     "PlanetID": 3,
@@ -30,7 +32,8 @@
     "HasRings": false,
     "Atmosphere": "Nitrogen, Oxygen",
     "DiscoveredBy": null,
-    "DiscoveryYear": null
+    "DiscoveryYear": null,
+    "ImgUrl": "https://solarsystem.nasa.gov/system/feature_items/images/17_earth.png"
   },
   {
     "PlanetID": 4,
@@ -41,7 +44,8 @@
     "HasRings": false,
     "Atmosphere": "CO2, Nitrogen, Argon",
     "DiscoveredBy": null,
-    "DiscoveryYear": null
+    "DiscoveryYear": null,
+    "ImgUrl": "https://solarsystem.nasa.gov/system/feature_items/images/19_mars.png"
   },
   {
     "PlanetID": 5,
@@ -52,7 +56,8 @@
     "HasRings": true,
     "Atmosphere": "Hydrogen, Helium",
     "DiscoveredBy": "Galileo Galilei",
-    "DiscoveryYear": 1610
+    "DiscoveryYear": 1610,
+    "ImgUrl": "https://solarsystem.nasa.gov/system/feature_items/images/16_jupiter_new.png"
   },
   {
     "PlanetID": 6,
@@ -63,7 +68,8 @@
     "HasRings": true,
     "Atmosphere": "Hydrogen, Helium",
     "DiscoveredBy": "Galileo Galilei",
-    "DiscoveryYear": 1610
+    "DiscoveryYear": 1610,
+    "ImgUrl": "https://solarsystem.nasa.gov/system/feature_items/images/28_saturn.png"
   },
   {
     "PlanetID": 7,
@@ -74,7 +80,8 @@
     "HasRings": true,
     "Atmosphere": "Hydrogen, Helium, Methane",
     "DiscoveredBy": "William Herschel",
-    "DiscoveryYear": 1781
+    "DiscoveryYear": 1781,
+    "ImgUrl": "https://solarsystem.nasa.gov/system/feature_items/images/29_uranus.png"
   },
   {
     "PlanetID": 8,
@@ -85,6 +92,7 @@
     "HasRings": true,
     "Atmosphere": "Hydrogen, Helium, Methane",
     "DiscoveredBy": "Urbain Le Verrier",
-    "DiscoveryYear": 1846
+    "DiscoveryYear": 1846,
+    "ImgUrl": "https://solarsystem.nasa.gov/system/feature_items/images/30_neptune.png"
   }
 ]
