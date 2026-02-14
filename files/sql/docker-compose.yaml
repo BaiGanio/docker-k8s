@@ -1,0 +1,24 @@
+services:
+  mssql-server:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=P@ssw0rd
+    ports:
+      - "1433:1433"
+
+  db-init:
+    image: mcr.microsoft.com/mssql-tools:latest
+    depends_on:
+      - mssql-server
+    volumes:
+      - .:/sql  # Maps the current folder (containing your .sql files) to /sql
+    command: >
+      bash -c "
+        echo 'Waiting for SQL Server to start...' &&
+        sleep 15s &&
+        for f in /sql/*.sql; do
+          echo \"Running $$f\";
+          /opt/mssql-tools/bin/sqlcmd -S mssql-server -U sa -P 'P@ssw0rd' -i \"$$f\" -C;
+        done
+      "
