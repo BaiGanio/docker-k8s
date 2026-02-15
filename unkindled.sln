@@ -1,0 +1,41 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2easy", "2easy", "{01500307-E567-2278-BEBA-50FD1A7C083F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1warm-up", "1warm-up", "{2E181704-8386-CA62-AFB4-0FD0A0D048C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetsApi", "2easy\PlanetsApi\PlanetsApi.csproj", "{96203D26-98EC-98E7-B7DE-C530F64B0D2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{F47DEC63-2736-D730-298E-465A65B35C68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console.Docker", "1warm-up\Console\Console.Docker.csproj", "{FB81A68E-212F-176E-2670-6C5CBF7064B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96203D26-98EC-98E7-B7DE-C530F64B0D2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96203D26-98EC-98E7-B7DE-C530F64B0D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96203D26-98EC-98E7-B7DE-C530F64B0D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96203D26-98EC-98E7-B7DE-C530F64B0D2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB81A68E-212F-176E-2670-6C5CBF7064B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB81A68E-212F-176E-2670-6C5CBF7064B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB81A68E-212F-176E-2670-6C5CBF7064B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB81A68E-212F-176E-2670-6C5CBF7064B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{96203D26-98EC-98E7-B7DE-C530F64B0D2C} = {01500307-E567-2278-BEBA-50FD1A7C083F}
+		{F47DEC63-2736-D730-298E-465A65B35C68} = {2E181704-8386-CA62-AFB4-0FD0A0D048C4}
+		{FB81A68E-212F-176E-2670-6C5CBF7064B1} = {F47DEC63-2736-D730-298E-465A65B35C68}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C49220DD-A3F0-40E3-A0CC-6A9BD8D09998}
+	EndGlobalSection
+EndGlobal
