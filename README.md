@@ -24,8 +24,8 @@ The flame flickers, but it does not fade - not yet!<br>
 ```text
 📦 unkindled         # .NET projects used in the challenges
  ┣ 📁 c1warm-up/  
-   ┣ 📁 Console/   
-   ┗ 📁 mssql/           
+ ┃  ┣ 📁 Console/   
+ ┃  ┗ 📁 mssql/           
  ┣ 📁 c2easy/
  ┣ 📁 c3medium/
  ┣ 📁 c4hard/
