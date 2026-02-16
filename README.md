@@ -23,7 +23,9 @@ The flame flickers, but it does not fade - not yet!<br>
 ## 🏗️ Repository Structure
 ```text
 📦 unkindled         # .NET projects used in the challenges
- ┣ 📁 c1warm-up/                
+ ┣ 📁 c1warm-up/  
+   ┣ 📁 Console/   
+   ┗ 📁 mssql/           
  ┣ 📁 c2easy/
  ┣ 📁 c3medium/
  ┣ 📁 c4hard/
