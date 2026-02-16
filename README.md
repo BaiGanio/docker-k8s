@@ -32,7 +32,7 @@ The flame flickers, but it does not fade - not yet!<br>
  ┣ 📁 c5proficient/
  ┣ 📁 files/
  ┃  ┗ 🖼️ images/
- ┣ 🧰 tools/                  # Artifacts from The Ancients
+ ┣ 🧰 tools/               # Artifacts from The Ancients
  ┃  ┣ 📁 csharp/
  ┃  ┃  ┗ 📁 c1/
  ┃  ┃     ┣ 📄 HelpMe.cs          # Gemstone
@@ -42,12 +42,12 @@ The flame flickers, but it does not fade - not yet!<br>
  ┃  ┃  ┗ 📄 sql.Docker            # Standalone MSSQL Server
  ┃  ┣ 📁 json/
  ┃  ┃  ┗ 📁 c1/
- ┃  ┃     ┗ 📄 planets.json.     # Lost knowledge of the ancient astronomers
+ ┃  ┃     ┗ 📄 planets.json.      # Lost knowledge of the ancient astronomers
  ┃  ┣ ☸️ k8s/
  ┃  ┗ 📁 sql/
- ┃     ┣ 📄 company.sql       # [1000 records]
- ┃     ┣ 📄 geography.sql     # [100 records]
- ┃     ┗ 📄 planets.sql       # [8 records]
+ ┃     ┣ 📄 company.sql           # [1000 records]
+ ┃     ┣ 📄 geography.sql         # [100 records]
+ ┃     ┗ 📄 planets.sql           # [8 records]
  ┗ 📘 README.md            <= You stand here, Unkindled one
 
 ```
