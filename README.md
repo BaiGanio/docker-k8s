@@ -110,7 +110,7 @@ The flame flickers, but it does not fade - not yet!<br>
 
 </table>
 
-<p align="center">Each lesson is crafted as a challenge, a trial by fire, designed to strengthen your understanding through practice rather than mere observation.</p>
+<p align="center">Each lesson is crafted as a challenge.<br>🔥 A trial by fire.<br>Designed to strengthen your understanding through practice rather than mere observation.</p>
 <p align="center" style="font-size: 90%; opacity: 0.7;">
   [<a href="#top">Back to top ↑</a>]
 </p>
