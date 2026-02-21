@@ -33,7 +33,7 @@ public static class HelpMe
                 planets.Add((
                     PlanetID: reader.GetInt32(0),
                     Name: reader.GetString(1),
-                    MassEarths: reader.GetDecimal(2),
+                    MassEarths: reader.IsDBNull(2) ? null : reader.GetDecimal(2),
                     DistanceAU: reader.GetDecimal(3)
                 ));
 

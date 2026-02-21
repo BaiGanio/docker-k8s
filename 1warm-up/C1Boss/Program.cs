@@ -13,7 +13,7 @@ while (choice != "exit")
     switch (choice)
     {
         case "0":
-            HelpMe.Print(HelpMe.ReadPlanets());
+            HelpMe.Print(HelpMe.GetPlanets());
             break;
 
         case "exit":

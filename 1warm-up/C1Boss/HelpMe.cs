@@ -4,11 +4,12 @@ using System.Text.Json;
 
 public static class HelpMe
 {
-    const string connectionString = "Server=localhost,1433;Database=Planets;User Id=sa;Password=P@ssw0rd;TrustServerCertificate=True;";
+    const string connectionString = "Server=mighty-mssql-server,1433;Database=Planets;User Id=sa;Password=P@ssw0rd;TrustServerCertificate=True;";
     const int width = 90;
 
-    static List<Planet> GetPlanets()   
+    public static List<Planet> GetPlanets()   
     {
+        List<Planet> planets = [];
         using var connection = new SqlConnection(connectionString);
 
         try
@@ -16,18 +17,21 @@ public static class HelpMe
             connection.Open();
             Console.WriteLine("Connected to SQL Server in Docker!");
 
-            var query = "SELECT PlanetID, Name, MassEarths, DistanceAU FROM Planet ORDER BY PlanetID"; 
+            var query = "SELECT PlanetID,Name, MassEarths,RadiusKm, DistanceAU, HasRings,Atmosphere FROM Planet ORDER BY PlanetID;"; 
             using var cmd = new SqlCommand(query, connection); 
             using var reader = cmd.ExecuteReader(); 
 
             while(reader.Read()) 
             { 
-                planets.Add((
-                    PlanetID: reader.GetInt32(0),
-                    Name: reader.GetString(1),
-                    MassEarths: reader.GetDecimal(2),
-                    DistanceAU: reader.GetDecimal(3)
-                ));
+                 planets.Add(new Planet{
+                    PlanetID = reader.GetInt32(0),
+                    Name = reader.GetString(1),
+                    MassEarths = (double)reader.GetDecimal(2),
+                    RadiusKm = (double?)reader.GetDecimal(3),
+                    DistanceAU = (double)reader.GetDecimal(4),
+                    HasRings = reader.GetBoolean(5),
+                    Atmosphere = reader.GetString(6)
+            });
 
             }
         }
