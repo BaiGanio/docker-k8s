@@ -1,33 +1,36 @@
-﻿
-//HelpMe.PrintHeader();
+﻿using System.Text.Json;
 
-string choice = "";
-int counter = 1;
+string json = File.ReadAllText("planets.json");
+List<Planet>? planets = JsonSerializer.Deserialize<List<Planet>>(json);
 
-while (choice != "exit")
+Console.WriteLine(new string('-', 90));
+// Column headers
+Console.WriteLine(
+    $"{ "ID",-4}  " +
+    $"{ "Name",-10}  " +
+    $"{ "Mass(E)",-8}  " +
+    $"{ "Radius(km)",-12}  " +
+    $"{ "Dist(AU)",-8}  " +
+    $"{ "Rings",-6}  " +
+    $"{ "Atmosphere",-30}"
+    // $"{ "Discovered By",-20}  " +
+    // $"{ "Year",-6}"
+);
+
+Console.WriteLine(new string('-', 90));
+
+foreach (var p in planets)
 {
-    HelpMe.PrintChoice(counter);
-
-    choice = Console.ReadLine()?.Trim().ToLower();
-
-    switch (choice)
-    {
-        case "0":
-            HelpMe.Print(HelpMe.ReadPlanets());
-            break;
-
-        case "exit":
-            Console.WriteLine();
-            Console.WriteLine(HelpMe.Center("🔥 You rest at the bonfire. Farewell. 🔥"));
-            break;
-
-        default:
-            Console.WriteLine();
-            Console.WriteLine(HelpMe.Center("✖ The abyss rejects your input... He-he ;/"));
-            break;
-    }
-
-    counter++;
+    Console.WriteLine(
+        $"{p.PlanetID,-4}  " +
+        $"{p.Name,-10}  " +
+        $"{p.MassEarths,-8:0.###}  " +
+        $"{p.RadiusKm,-12:0.##}  " +
+        $"{p.DistanceAU,-8:0.##}  " +
+        $"{(p.HasRings.Value ? "Yes" : "No"),-6}  " +
+        $"{p.Atmosphere,-30}"
+        // $"{(p.DiscoveredBy ?? "Unknown"),-20}  " +
+        // $"{(p.DiscoveryYear?.ToString() ?? "----"),-6}"
+    );
 }
-
-//HelpMe.PrintFooter();
+Console.WriteLine(new string('-', 90));

@@ -6,7 +6,9 @@ services:
       - MSSQL_SA_PASSWORD=P@ssw0rd
     ports:
       - "1433:1433"
-
+    volumes: 
+      - mssql_data:/var/opt/mssql # <-- persistent data
+ 
   db-init:
     image: mcr.microsoft.com/mssql-tools:latest
     depends_on:
@@ -17,8 +19,26 @@ services:
       bash -c "
         echo 'Waiting for SQL Server to start...' &&
         sleep 15s &&
+
+        echo 'Checking if database exists...' &&
+        DB_EXISTS=$(/opt/mssql-tools/bin/sqlcmd \
+          -S mighty-mssql-server \
+          -U sa \
+          -P 'P@ssw0rd' \
+          -Q \"IF DB_ID('Planets') IS NOT NULL SELECT 1 ELSE SELECT 0\" \
+          -h -1 -W -C)
+
+        if [ \"$DB_EXISTS\" -eq 1 ]; then
+          echo 'Database Planets already exists. Skipping initialization.';
+          exit 0;
+        fi
+
+        echo 'Database Planets not found. Running initialization scripts...';
         for f in /sql/*.sql; do
           echo \"Running $$f\";
           /opt/mssql-tools/bin/sqlcmd -S mighty-mssql-server -U sa -P 'P@ssw0rd' -i \"$$f\" -C;
         done
       "
+
+volumes: 
+  mssql_data:

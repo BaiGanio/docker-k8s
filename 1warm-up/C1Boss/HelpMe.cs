@@ -1,49 +1,42 @@
 
-// using Microsoft.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Text.Json;
 
 public static class HelpMe
 {
+    const string connectionString = "Server=localhost,1433;Database=Planets;User Id=sa;Password=P@ssw0rd;TrustServerCertificate=True;";
     const int width = 90;
-    static readonly List<Planet> planets = [];
-    public static List<Planet> ReadPlanets()
+
+    static List<Planet> GetPlanets()   
     {
-        string json = File.ReadAllText("planets.json");
-        List<Planet>? planets = JsonSerializer.Deserialize<List<Planet>>(json);
+        using var connection = new SqlConnection(connectionString);
+
+        try
+        {
+            connection.Open();
+            Console.WriteLine("Connected to SQL Server in Docker!");
+
+            var query = "SELECT PlanetID, Name, MassEarths, DistanceAU FROM Planet ORDER BY PlanetID"; 
+            using var cmd = new SqlCommand(query, connection); 
+            using var reader = cmd.ExecuteReader(); 
+
+            while(reader.Read()) 
+            { 
+                planets.Add((
+                    PlanetID: reader.GetInt32(0),
+                    Name: reader.GetString(1),
+                    MassEarths: reader.GetDecimal(2),
+                    DistanceAU: reader.GetDecimal(3)
+                ));
+
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
         return planets;
     }
-    // static List<Planet> GetPlanets()   
-    // {
-    //     string connectionString = "Server=localhost,1433;Database=Planets;User Id=sa;Password=P@ssw0rd;TrustServerCertificate=True;";
-
-    //     using var connection = new SqlConnection(connectionString);
-
-    //     try
-    //     {
-    //         connection.Open();
-    //         Console.WriteLine("Connected to SQL Server in Docker!");
-
-    //         var query = "SELECT PlanetID, Name, MassEarths, DistanceAU FROM Planet ORDER BY PlanetID"; 
-    //         using var cmd = new SqlCommand(query, connection); 
-    //         using var reader = cmd.ExecuteReader(); 
-
-    //         while(reader.Read()) 
-    //         { 
-    //             planets.Add((
-    //                 PlanetID: reader.GetInt32(0),
-    //                 Name: reader.GetString(1),
-    //                 MassEarths: reader.GetDecimal(2),
-    //                 DistanceAU: reader.GetDecimal(3)
-    //             ));
-
-    //         }
-    //     }
-    //     catch (Exception ex)
-    //     {
-    //         Console.WriteLine("Error: " + ex.Message);
-    //     }
-    //     return planets;
-    // }
     
     public static void Print(List<Planet> planets)
     {
